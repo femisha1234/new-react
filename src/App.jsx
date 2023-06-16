@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
-
+import Form from './Form';
 
 
 export default function App() {
@@ -24,6 +24,9 @@ const getData=async () =>{
 
   return (
     <div>
+        <Container className="my-5"></Container>
+        <h1 className="my-5 text-center display-2">Login form</h1>
+      <Form/>
       <Container className="my-5">
       <h1 className="my-5 text-center display-2"> Todo list </h1>
       <Table striped bordered hover>
@@ -38,6 +41,7 @@ const getData=async () =>{
         </tr> 
    ) )}
     </tbody>
+    
   </Table>
   </Container>
   </div>
